@@ -1,7 +1,6 @@
 .container {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to right, #f3b07c, #fcd283);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,22 +8,21 @@
   }
   
   .weather img {
-    margin-top: 3rem;
-    width: 25rem;
+    margin-top: 1.5rem;
+    width: 22rem;
     height: 20rem;
   }
   
   .weather-app {
     width: 35rem;
-    height: 65rem;
-    /* background-image: linear-gradient(to top, #f3b07c, #fcd283); */
+    height: 70rem;
     background-color: #fff;
     border-radius: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    box-shadow: -3rem 1rem 6rem rgba(0, 0, 0, 0.1);
+    box-shadow: -3rem 1rem 6rem rgba(0, 0, 0, 0.3);
     position: relative;
   }
   
@@ -46,7 +44,7 @@
   }
   
   .search-top div {
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #484569;
     letter-spacing: 0.1rem;
   }
@@ -56,7 +54,7 @@
   }
   
   .search-bar input {
-    width: 25rem;
+    width: 28rem;
     height: 3.5rem;
     background-color: transparent;
     border: 0.2rem solid #676394;
@@ -101,7 +99,7 @@
   
   .weather-type {
     position: absolute;
-    top: 48%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
@@ -110,8 +108,8 @@
   
   .temp {
     position: absolute;
-    top: 55%;
-    left: 50%;
+    top: 48%;
+    left: 55%;
     transform: translateX(-50%);
     font-size: 9rem;
     background-image: linear-gradient(to right, #2f2e57, #605d80);
@@ -122,7 +120,7 @@
   
   .weather-date {
     position: absolute;
-    bottom: 22%;
+    bottom: 34%;
     font-size: 1.6rem;
     color: #484569;
   }
@@ -131,8 +129,10 @@
     width: 100%;
     position: absolute;
     bottom: 2rem;
-    display: flex;
+    display:grid;
+    grid-template-columns: auto auto;
     column-gap: 2rem;
+    row-gap: 2rem;
     padding: 0 2rem;
   }
   
@@ -141,11 +141,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 1.5rem;
-    /* background-color: rgba(255, 255, 255, 0.2); */
+    row-gap: 0.5rem;
     background-color: #a5a5ab71;
     padding: 1rem;
     border-radius: 1rem;
+  }
+
+  .pressure img {
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  .visibility img {
+    height: 2rem;
+    width: 2rem;
   }
   
   .data-name {
@@ -164,4 +173,3 @@
     font-size: 2rem;
     color: #2f2e57;
   }
-  
