@@ -20,7 +20,7 @@ const WeatherApp = () => {
   const [wind, setWind] = useState("");
   const [humidity, setHumidity] = useState("");
 
-  const api_key = "c51bc39907a84eef42a214134347ddc2";
+  const api_key = "";
 
   useEffect(() => {
     const fetchDefaultWeather = async () => {
